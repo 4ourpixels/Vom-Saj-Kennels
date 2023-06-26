@@ -17,21 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      /* Style the image container */
-      .image-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      /* Style individual images */
-      .image {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin: 10px;
-      }
-    </style>
   </head>
   <body>
     <header data-bs-theme="dark">
@@ -66,12 +51,12 @@
                 <a href="./contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form id="search-form" class="d-flex">
               <input
+                id="search-box"
                 class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+                type="text"
+                placeholder="Search for images"
               />
               <button class="btn btn-outline-secondary" type="submit">
                 Search
@@ -89,53 +74,24 @@
           <p class="lead text-muted">
             Have a look at what we have in store for you.
           </p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
         </div>
       </section>
 
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div id="search-result"></div>
         </div>
+      </div>
+
+      <div class="container">
+        <button
+          type="submit"
+          class="btn btn-primary text-center"
+          id="show-more-btn"
+        >
+          Show more
+        </button>
       </div>
     </main>
 
@@ -160,33 +116,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Function to fetch pictures from the API
-      function fetchPictures() {
-        // Replace 'YOUR_API_URL' with the actual URL of the free API
-        fetch("YOUR_API_URL")
-          .then((response) => response.json())
-          .then((data) => {
-            const imageContainer = document.querySelector(".image-container");
-
-            // Loop through the fetched data and create image elements
-            data.forEach((picture) => {
-              const image = document.createElement("img");
-              image.src = picture.url;
-              image.alt = picture.title;
-              image.classList.add("image");
-
-              // Append the image to the container
-              imageContainer.appendChild(image);
-            });
-          })
-          .catch((error) => {
-            console.log("Error:", error);
-          });
-      }
-
-      // Call the fetchPictures function to fetch and display the pictures
-      fetchPictures();
-    </script>
+    <script src="./gallery.js"></script>
   </body>
 </html>
