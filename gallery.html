@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header data-bs-theme="dark">
@@ -77,19 +78,11 @@
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            <div id="search-result"></div>
-        </div>
+      <div class="album bg-light">
+        <div id="search-result"></div>
       </div>
-
-      <div class="container">
-        <button
-          type="submit"
-          class="btn btn-primary text-center"
-          id="show-more-btn"
-        >
+      <div class="d-flex justify-content-center m-3">
+        <button type="submit" class="btn btn-primary" id="show-more-btn">
           Show more
         </button>
       </div>
@@ -97,12 +90,9 @@
 
     <footer class="text-muted">
       <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
         <p>
           &copy; Vom Saj Kennels 2017–2023 &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+          <a class="float-right underline" href="#">Back to top</a>
         </p>
       </div>
     </footer>
