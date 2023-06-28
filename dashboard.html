@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vom Saj Kennels | Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vom Saj Kennels</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div style="margin-top: 5rem;" class="container-fluid ">
+      <h1 class="m-4">Database</h1>
+      <div class="row">
+        <div class="col-12">
+          <div class="row m-5">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div id="chart"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div id="chart2"></div>
+            </div>
+          </div>
+          <div class="card bg-ligh ms-4 me-4 mb-4">
+            <div class="card-header">
+              <i class="fa-solid fa-list fa-lg"></i> Dog Records
+            </div>
+            <div class="card-body">
+              <div class="card-title">A list of all the dogs in the system</div>
+              <p class="card-text">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Dog Name</th>
+                        <th scope="col">Breed</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Max</td>
+                        <td>German Shepherd</td>
+                        <td>Male</td>
+                        <td>2 Years</td>
+                        <td>Black & Tan</td>
+                        <td>Available</td>
+                      </tr>
+                      <tr>
+                        <td>Bella</td>
+                        <td>German Shepherd</td>
+                        <td>Female</td>
+                        <td>1 Year</td>
+                        <td>Sable</td>
+                        <td>Reserved</td>
+                      </tr>
+                      <tr>
+                        <td>Rocky</td>
+                        <td>German Shepherd</td>
+                        <td>Male</td>
+                        <td>2 Years</td>
+                        <td>Black & Tan</td>
+                        <td>Available</td>
+                      </tr>
+                      <tr>
+                        <td>Luna</td>
+                        <td>German Shepherd</td>
+                        <td>Female</td>
+                        <td>1 Year</td>
+                        <td>Bi-color</td>
+                        <td>Reserved</td>
+                      </tr>
+                      <tr>
+                        <td>Charlie</td>
+                        <td>German Shepherd</td>
+                        <td>Male</td>
+                        <td>2 Years</td>
+                        <td>Brown</td>
+                        <td>Sold</td>
+                      </tr>
+                      <tr>
+                        <td>Daisy</td>
+                        <td>German Shepherd</td>
+                        <td>Female</td>
+                        <td>1 Year</td>
+                        <td>Black</td>
+                        <td>Available</td>
+                      </tr>
+                      <tr>
+                        <td>Cooper</td>
+                        <td>German Shepherd</td>
+                        <td>Male</td>
+                        <td>2 Years</td>
+                        <td>Brown</td>
+                        <td>Available</td>
+                      </tr>
+                      <tr>
+                        <td>Lucy</td>
+                        <td>German Shepherd</td>
+                        <td>Female</td>
+                        <td>2 Years</td>
+                        <td>Black</td>
+                        <td>Available</td>
+                      </tr>
+                      <tr>
+                        <td>Bobby</td>
+                        <td>German Shepherd</td>
+                        <td>Male</td>
+                        <td>2 Years</td>
+                        <td>Bi-color</td>
+                        <td>Reserved</td>
+                      </tr>
+                      <tr>
+                        <td>Sadie</td>
+                        <td>German Shepherd</td>
+                        <td>Female</td>
+                        <td>3 Years</td>
+                        <td>Sable</td>
+                        <td>Available</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        &copy; Vom Saj Kennels 2017–2023 &middot;
+        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      var options = {
+          series: [{
+          data: [580, 690, 1100, 1200, 1380]
+        }],
+          chart: {
+          type: 'bar',
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            horizontal: true,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        xaxis: {
+          categories: ['German Shepherd', 'Boerboel', 'Maltese', 'Rottweiler', 'Jpanese Spitz'
+          ],
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+    <script>
+      var availableDogs = 7;  // Number of available dogs
+      var soldDogs = 3;      // Number of sold dogs
+      var reservedDogs = 2;  // Number of reserved dogs
+
+      var options = {
+        series: [availableDogs, soldDogs, reservedDogs],
+        chart: {
+          type: 'donut',
+        },
+        labels: ['Available', 'Sold', 'Reserved'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart2"), options);
+      chart.render();
+    </script>
+    <script
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
