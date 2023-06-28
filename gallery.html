@@ -82,11 +82,11 @@
       </nav>
     </header>
 
-    <main style="margin-top: 8rem; height: 75vh" role="main">
+    <main style="margin-top: 8rem; height: 100vh" role="main">
       <section class="jumbotron text-center">
-        <div class="container-fluid">
+        <div class="container">
           <h3 class="jumbotron-heading">Search for your favorite dog</h3>
-          <form id="search-form" class="d-flex">
+          <form id="search-form" class="d-flex input-group-lg">
             <input
               id="search-box"
               class="form-control me-2"
@@ -100,26 +100,29 @@
         </div>
       </section>
 
-      <div class="album bg-light">
+      <div class="album bg-light mb-5">
         <div id="search-result"></div>
       </div>
-      <div class="d-flex justify-content-center m-3">
-        <button type="submit" class="btn btn-primary" id="show-more-btn">
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-dark mb-3" id="show-more-btn">
           Show more
         </button>
       </div>
-    </main>
-
-    <footer class="text-muted fixed-bottom">
-      <div class="container">
-        <p>
-          &copy; Vom Saj Kennels 2017–2023 &middot;
-          <a class="float-right underline" href="#">Back to top</a>
-          <a class="vom" href="./terms.html">Privacy</a> &middot;
-          <a class="vom" href="./terms.html">Terms</a>
-        </p>
+      <div class="my-3 container">
+        <hr />
       </div>
-    </footer>
+
+      <footer class="text-muted">
+        <div class="container">
+          <p class="mb-3">
+            &copy; Vom Saj Kennels 2017–2023 &middot;
+            <a class="float-right underline" href="#">Back to top</a>
+            <a class="vom" href="./terms.html">Privacy</a> &middot;
+            <a class="vom" href="./terms.html">Terms</a>
+          </p>
+        </div>
+      </footer>
+    </main>
     <script
       src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
