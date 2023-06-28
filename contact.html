@@ -20,11 +20,22 @@
     <link href="form-validation.css" rel="stylesheet" />
   </head>
   <body>
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <header>
+      <nav
+        style="background-color: #03051a"
+        class="navbar navbar-expand-md fixed-top"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Vom Saj Kennels</a>
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class=""
+              width="auto"
+              height="60"
+              src="./logo.png"
+              alt="Vom Saj Kennels"
+          /></a>
           <button
+            style="background-color: #fff"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -33,26 +44,28 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span style="color: #03051a" class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-white"
                   aria-current="page"
                   href="./index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Gallery</a>
+                <a class="nav-link text-white" href="./gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a href="./contact.html" class="nav-link">Contact</a>
+                <a href="./contact.html" class="nav-link text-white">Contact</a>
               </li>
               <li class="nav-item">
-                <a href="./dashboard.html" class="nav-link">Dashboard</a>
+                <a href="./dashboard.html" class="nav-link text-white"
+                  >Dashboard</a
+                >
               </li>
             </ul>
           </div>
@@ -153,7 +166,8 @@
           <p class="float-end"><a href="#">Back to top</a></p>
           <p>
             &copy; Vom Saj Kennels 2017–2023 &middot;
-            <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+            <a href="./terms.html">Privacy</a> &middot;
+            <a href="./terms.html">Terms</a>
           </p>
         </footer>
       </main>
