@@ -51,8 +51,8 @@
               <li class="nav-item">
                 <a href="./contact.html" class="nav-link">Contact</a>
               </li>
-              li class="nav-item">
-                <a href="./dashboard" class="nav-link">Dashboard</a>
+              <li class="nav-item">
+                <a href="./dashboard.html" class="nav-link">Dashboard</a>
               </li>
             </ul>
           </div>
@@ -75,13 +75,13 @@
           <div class="col-md-12 col-lg-12">
             <form
               action="form-handler.php"
-              method="POST"
+              method="post"
               class="needs-validation"
               novalidate
             >
               <div class="row g-3">
                 <div class="col-12">
-                  <label for="email" class="form-label my-3"
+                  <label for="name" class="form-label my-3"
                     >Enter your name</label
                   >
                   <input
@@ -114,12 +114,12 @@
 
               <div class="row g-3">
                 <div class="col-12">
-                  <label for="email" class="form-label my-3">Subject</label>
+                  <label for="subject" class="form-label my-3">Subject</label>
                   <input
                     name="subject"
-                    type="email"
+                    type="text"
                     class="form-control"
-                    id="email"
+                    id="subject"
                     placeholder="RE: Subject"
                   />
                 </div>
@@ -127,7 +127,7 @@
 
               <div class="row g-3">
                 <div class="col-12">
-                  <label for="email" class="form-label my-3">Subject</label>
+                  <label for="message" class="form-label my-3">Message</label>
 
                   <textarea
                     name="message"
