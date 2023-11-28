@@ -137,15 +137,15 @@
         <hr />
       </div>
 
-      <footer class="text-muted">
-        <div class="container">
-          <p class="mb-3">
-            &copy; Vom Saj Kennels 2017–2023 &middot;
-            <a class="float-right underline" href="#">Back to top</a>
-            <a class="vom" href="./terms.html">Privacy</a> &middot;
-            <a class="vom" href="./terms.html">Terms</a>
-          </p>
-        </div>
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          <a href="./terms.html">Privacy</a> &middot;
+          <a href="./terms.html">Terms</a> &middot; &copy; Vom Saj Kennels
+          &middot; Powered By
+          <a href="https://4ourpixels.com/">Four Pixels</a>
+        </p>
       </footer>
     </main>
     <script
@@ -159,5 +159,27 @@
       crossorigin="anonymous"
     ></script>
     <script src="./gallery.js"></script>
+    <script>
+      const accessToken = "YOUR_ACCESS_TOKEN";
+      const userId = "YOUR_USER_ID";
+
+      fetch(
+        `https://graph.instagram.com/${userId}/media?fields=id,media_url&access_token=${accessToken}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          // Process the response data
+          const media = data.data;
+          media.forEach((item) => {
+            // Create an image element for each media item
+            const img = document.createElement("img");
+            img.src = item.media_url;
+            document.body.appendChild(img); // Append the image to the body or any other container element
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script>
   </body>
 </html>
